@@ -23,6 +23,10 @@ public class Person {
 	public void setTel(String tel) {
 		this.tel = tel;
 	}
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", age=" + age + ", tel=" + tel + "]";
+	}
 	public static void main(String... args){
 		System.out.println(new Person());
 	}
