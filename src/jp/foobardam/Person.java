@@ -39,6 +39,6 @@ public class Person {
 	
 	public static void main(String... args){
 		System.out.println(new Person());
-		System.out.println(new Person("‘¾˜Y", 28, "090-1234-5678"));
+		System.out.println(new Person("å¤ªéƒŽ", 28, "090-1234-5678"));
 	}
 }

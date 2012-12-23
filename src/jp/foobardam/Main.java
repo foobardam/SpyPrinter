@@ -7,12 +7,12 @@ import org.apache.commons.beanutils.PropertyUtils;
 
 public class Main {
 	public static void main(String[] args) {
-		Person p = new Person("‘¾˜Y", 28, "090-1234-5678");
+		Person p = new Person("å¤ªéƒŽ", 28, "090-1234-5678");
 		for(PropertyDescriptor pd : PropertyUtils.getPropertyDescriptors(p)){
 			try{
 				String propName = pd.getName();
 				Object prop = PropertyUtils.getProperty(p, propName);
-				System.out.format("ƒvƒƒpƒeƒB(%s) => %s%n",  propName, prop);
+				System.out.format("ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£(%s) => %s%n",  propName, prop);
 			} catch (IllegalAccessException e){
 				e.printStackTrace();
 			} catch (InvocationTargetException e){
