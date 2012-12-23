@@ -29,8 +29,15 @@ public class Main {
 //		Person p = new Person("太郎", 28, "090-1234-5678");
 //		print(p);
 //	}
+	
+//	public static void main(String[] args) {
+//		Company c = new Company("ZONY", "品川", "03-1234-5678");
+//		print(c);
+//	}
+
 	public static void main(String[] args) {
 		Company c = new Company("ZONY", "品川", "03-1234-5678");
-		print(c);
+		Employee e = new Employee("太郎", 28, "090-1234-5678", c);
+		print(e);
 	}
 }
