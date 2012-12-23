@@ -12,7 +12,10 @@ public class Main {
 			try{
 				String propName = pd.getName();
 				Object prop = PropertyUtils.getProperty(p, propName);
-				System.out.format("プロパティ(%s) => %s%n",  propName, prop);
+				String propType = pd.getPropertyType().toString();
+				if(!"class java.lang.Class".equals(propType)){
+					System.out.format("プロパティ(%s) => %s%n",  propName, prop);
+				}
 			} catch (IllegalAccessException e){
 				e.printStackTrace();
 			} catch (InvocationTargetException e){
